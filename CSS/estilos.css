@@ -1,0 +1,186 @@
+/*reset css*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(233, 221, 204);
+}
+/*estilos header*/
+
+header {
+    display: block;
+    display: flex;
+    background-color: #EA6523;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+header h1 {
+    color: antiquewhite;
+}
+
+header a img {
+    height: 3.5rem;
+}
+
+/*estilos main*/
+
+main {
+    display: grid;
+    grid-template-columns: 1.2fr 0.7fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "div aside";
+    align-items: center;
+    height: 75vh;
+}
+
+main div {
+    grid-area: div;
+}
+
+main aside {
+    grid-area: aside;
+}
+
+.loguito {
+    width: 70%;
+    max-width: 700px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.5rem;
+    padding-bottom: 6rem;
+}
+
+.formulario input, .formulario label, .formulario div input, .formulario a input {
+    font-size: 1.7rem;
+    padding: 0.3rem;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.formulario div input, .formulario a input {
+    letter-spacing: 0.1rem;
+    background-color: #455561;
+    color: antiquewhite;
+    box-shadow: 2px 2px 2px black;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.formulario div input:hover, .formulario a input:hover {
+    background-color: blue;
+}
+/*estilos footer*/
+
+footer {
+    background-color: #455561;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+footer a img {
+    width: 6rem;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer ul li {
+    font-size: 1.8rem;
+    color: antiquewhite;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: chartreuse;
+}
+
+
+
+
+
+
+
+
+/*esilos de home*/
+/*main home*/
+
+.mainHome, .mainAccesos{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    padding: 1rem;
+    height: max-content;
+    gap: 4rem;
+}
+
+.mainHome h2 {
+    padding: 1rem;
+}
+
+.mainHome ul {
+    list-style: none;
+}
+
+.mainHome ul li a img {
+    height: 200px;
+    width: 600px;
+}
+
+.ulMain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+
+
+
+
+/*estilos reclamos*/
+/*main reclamos*/
+.mainAccesos ul li a img {
+    height: 5rem;
+}
+
+.mainAccesos ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 3rem;
+}
+
+.mainAccesos ul li {
+    width: 25rem;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color:lightslategray
+}
+
+.mainAccesos ul li a {
+    text-decoration: none;
+}

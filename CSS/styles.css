@@ -1,0 +1,240 @@
+/*reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;
+}
+
+/*header*/
+.cpLogo {
+    padding: 20px;
+    margin-top: 10px;
+    width: 300px;
+    height: auto;
+}
+.header {
+    display: flex;
+    background-color: #EA6523;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 0;
+}
+body header h1 {
+    font-size: 25px;
+    color: beige;
+}
+
+.ynerciaLista {
+    list-style: none;
+    
+}
+.ynerciaLista li {
+    display: inline-block;
+}
+.ynerciaLista li a input {
+    /*font-family: 'Yanone Kaffeesatz', sans-serif;*/
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    color: #455561;
+}
+
+.html {
+    height: 100%;
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
+
+/*body*/
+body {
+    background-color: rgb(233, 221, 204);
+    height: 100vh;
+    
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body main div img {
+    width: 600px;
+    margin-right: 200px;
+}
+aside {
+    margin-bottom: 160px;
+}
+.formulario {
+    display: flex;
+    justify-content: start;
+    flex-flow: column wrap;
+    justify-items: flex-start;
+}
+
+.formulario input, .formulario label input{
+    padding: 5px;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.formulario div input{
+    font-size: 20px;
+}
+.formulario div input {
+    background-color: rgb(236, 130, 9);
+    border-radius: 5px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.botonInvitado {
+    margin-top: 50px;
+    background-color: #455561;
+    border-radius: 5px;
+    color: beige;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 25px;
+}
+footer {
+    background-color: #455561;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+footer ul {
+    list-style: none;
+    color: beige;
+
+}
+
+body main h2 {
+    padding: 30px 0px 30px 0px
+}
+li {
+    padding: 5px;
+    margin: 5px;
+}
+
+footer ul li a {
+    color: rgb(7, 223, 54);
+    text-decoration: none;
+}
+footer a img {
+    width: 100px;
+}
+
+
+/*html HOME*/
+.logoAccesos {
+    width: 100px;
+}
+
+.listaDePaginas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*main home*/
+.mainHome {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../CSS/img/86771fbada0d3e36c15321d50ecbd534.jpg);
+    background-size: 300px;
+    background-repeat: repeat;
+    background-position: 50px;
+    padding-bottom: 50px;
+    
+
+}
+.mainHome h2 {
+    text-align: center;
+    padding: 15px;
+}
+
+.mainHome ul li {
+    height: 500px;
+    width: 1000px;
+}
+
+.mainHome ul li a img {
+    height: 100%;
+    width: 100%;
+}
+.mainHome p a {
+    padding: 50px;
+    margin: 20px;
+}
+.ulMain {
+    display: flex;
+    list-style: none;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*soportehtml*/
+.mainAccesos h2 {
+    text-align: center;
+}
+
+.mainAccesos {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../CSS/img/INTEGRAMOS\ EL\ MUNDO\ FINANCIERO\ Y\ TECNOLOGICO\ PARA\ BRINDAR\ ELECTRONICAS\ A\ NUESTROS\ CLIENTES\ \(1\)\ \(1\).png);
+    background-size: 100%;
+    /*background-repeat: repeat;
+    background-position: 50px;*/
+    padding-bottom: 50px;
+}
+
+.mainAccesos ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    text-decoration: none;
+}
+.listaDePaginas li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:left;
+    align-items: center;
+    width: 400px;
+    
+    
+}
+
+.listaDePaginas li a {
+    text-decoration: none;
+}
+
+.mainAccesos ul li a  {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #455561;;
+    margin-left: 10px;
+}
+.soporteBHome, .homeBIndex {
+    padding: 25px 100px;
+    font-size: 25px;
+}
+.mainAccesos span, .mainHome span {
+    display: flex;
+    justify-content: center;
+}
+
+html {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
