@@ -16,6 +16,12 @@ body {
 .contenedorIndex {
     display: grid;
     height: 100vh;
+    grid-template-columns: 10fr;
+    grid-template-rows: 0.9fr 7fr 1.2fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
 }
 
 /*estilos header mobile*/
@@ -23,39 +29,48 @@ header {
     display: inline-block;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     background-color: #EA6523;
     align-items: center;
-    padding: 1rem;
+    justify-content: space-evenly;
     width: 100%;
-    height: 8rem;
+    grid-area: header;
 }
 
 header h1 {
-    font-size: 1.5rem;
-}
-
-
-
-/*estilos header pantalla completa*/
-/*
-header {
-    display: block;
-    display: flex;
-    background-color: #EA6523;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    width: 100%;
-}
-*/
-header h1 {
+    font-size: 1.2rem;
     color: antiquewhite;
 }
 
 header a img {
-    height: 3.5rem;
+    height: 3rem;
 }
+
+/*estilos header pantalla completa*/
+@media (min-width: 600px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: #EA6523;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        width: 100%;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    header a img {
+        height: 4rem;
+    }
+    
+    
+}
+    
+
+
+
 
 
 
@@ -72,22 +87,53 @@ header a img {
 
 
 .imagenIndex {
-    display: none;
+    display: block;
+    position: absolute;
+    opacity: 0.3;
+    z-index:1;
+}
+
+.loguito {
+    width: 100%;
 }
 
 .formulario {
-    display: block;
     display: flex;
-    padding: 2rem;
+    /*padding: 2rem 0rem 2rem 0rem;*/
     flex-direction: column;
     gap: 1rem;
     align-items: center;
+    justify-content: space-evenly;
 }
+
+aside {
+    z-index: 10;
+}
+
+
 main {
-    background-image: url(../CSS/img/imagen-portada-4.png);
+    /*background-image: url(../CSS/img/imagen-portada-4.png);
     background-size:contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center;*/
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    justify-content:space-around
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    grid-template-rows: repeat(6, 2fr);
+    grid-template-areas: 
+    "usuario usuario"
+    "contraseña contraseña"
+    "recordarme recordarme"
+    "enviar borrar"
+    "invitado invitado"
+    "recuperar recuperar";
+    width: 100%;
 }
 
 .formulario input, .formulario label, .formulario div input, .formulario a input {
@@ -97,12 +143,41 @@ main {
     width: max-content;
 }
 
+.usuario {
+    grid-area: usuario;
+}
+
+.contraseña {
+    grid-area: contraseña;
+}
+
+.formulario label {
+    grid-area: recordarme;
+}
+
+.enviar {
+    grid-area: enviar;
+}
+
+.borrar {
+    grid-area: borrar;
+}
+
+.botonInvitado {
+    grid-area: invitado;
+}
+
+.recuperar {
+    grid-area: recuperar;
+}
+
 .formulario div input, .formulario a input {
     letter-spacing: 0.1rem;
     background-color: #455561;
     color: antiquewhite;
     box-shadow: 2px 2px 2px black;
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    border-radius: 5px;
 }
 
 .formulario div input:hover, .formulario a input:hover {
@@ -146,21 +221,28 @@ main aside {
 
 
 
-
-
-/*estilos footer pantalla completa*/
+/*estilos footer mobile*/
 
 footer {
     background-color: #455561;
     display: block;
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem;
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+    grid-area: footer;
 }
 
 footer a img {
+    display: none;
     width: 6rem;
 }
+
+
+/*estilos footer pantalla completa*/
+
+
+
+
 
 footer ul {
     list-style: none;
@@ -169,7 +251,7 @@ footer ul {
     justify-content: center;
 }
 footer ul li {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     color: antiquewhite;
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
